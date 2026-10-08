@@ -9,17 +9,18 @@ Bu site, mevcut web sitesine ve Instagram hesabına doğrudan erişilemeden, mü
 - [ ] **Hava yolu organizasyonu:** İşletmenin rolü (organizasyon/refakat/evrak).
 - [ ] **Kafes:** İşletme kafes sağlıyor mu, müşterinin kafesi kullanılabiliyor mu?
 - [ ] **İkinci numara (0544 598 42 86):** Dört ilandan üçünde “Bilgi ve rezervasyon” numarası olarak, bir ilanda araç kaplamasında da geçiyor. İşletme onaylarsa iletişim bölümüne eklenebilir; şimdilik sitede yalnızca ana numara var.
-- [ ] **İlanlardaki iddialar:** “7/24 kamera sistemi ile takip”, “%100 güvenlik”, “deneyimli ekip”, “zamanında teslim” ifadeleri sitede metin olarak kullanılmadı. Kamera ile takip gerçekten sunuluyorsa, kapsamı netleştirilip “Araç ve yolculuk” bölümüne eklenebilir. (Bu ifadeler galerideki ilan görsellerinin içinde görünmeye devam ediyor.)
+- [ ] **İlanlardaki iddialar:** “7/24 kamera sistemi ile takip”, “%100 güvenlik”, “deneyimli ekip”, “zamanında teslim” ifadeleri sitede metin olarak kullanılmadı. Kamera ile takip gerçekten sunuluyorsa, kapsamı netleştirilip “Araç ve yolculuk” bölümüne eklenebilir. 
 - [ ] **Mevcut sitedeki sayısal iddialar** (yıl, transfer sayısı vb.): Yeni sitede kullanılmadı. Belgelenirse eklenebilir.
 - [ ] **“Resmî” ifadesi / yetki belgesi:** Instagram biyografisindeki ifade tek başına kanıt sayılmadı. Yetki belgesi varsa belge adı ve numarasıyla eklenebilir.
 - [ ] **Açık adres / unvan:** Yapılandırılmış veri (LocalBusiness) için; şu an yalnızca Mezitli / Mersin yazılı.
 
 ## İçerik ve görseller
 - [ ] Orijinal logo dosyası alınacak; `index.html` başlığındaki geçici pati ikonu ve renk değişkenleri logoya göre eşleştirilecek.
-- [x] Araç görselleri işletmenin paylaştığı 4 sefer ilanından kırpıldı (ana bölüm, araç bölümü, paylaşım görseli `og-arac.jpg`). İlanlardaki arka planlar ve önde duran köpek/kedi görselleri kırpmaya dahil edilmedi.
-- [x] 4 ilan, galeride “Geçmiş sefer ilanı” olarak eklendi (26 ve 29 Temmuz, 2 ve 10 Ağustos 2026). Yaklaşan sefer listesine eklenmedi.
-- [ ] Aracın ilan dışı, orijinal çözünürlükte gerçek bir fotoğrafı (ve varsa taşıma alanının içi) gelirse ana bölüm görseli değiştirilmeli; ilanlardan kırpılan görsel düşük çözünürlüklü.
-- [ ] Teslimat ve Kıbrıs yolculuğu kartlarına gerçek fotoğraf eklenecek; şu an Instagram bağlantılı ikon kart.
+- [x] İşletmenin gönderdiği 5 gerçek fotoğraf eklendi: araç (ana bölüm, galeri, paylaşım görseli `og-arac.jpg`) ve 4 teslim anı (araç bölümü + galeri).
+- [x] Yapay zekâ görseli içeren sefer ilanları ve onlardan kırpılan görseller işletmenin isteğiyle siteden kaldırıldı.
+- [ ] Teslim fotoğraflarında yüzü görünen kişilerden web kullanım izni alındığı işletme tarafından teyit edilecek.
+- [ ] Kıbrıs yolculuğu kartına gerçek fotoğraf eklenecek; şu an Instagram bağlantılı ikon kart.
+- [ ] Taşıma alanının (araç içi) fotoğrafı gelirse araç bölümüne eklenebilir.
 - [ ] İnsanların, plakaların veya müşteri bilgilerinin göründüğü her görsel için **web kullanım izni** alınacak.
 - [ ] Yapay zekâ ile üretilmiş görsel, gerçek transfer veya müşteri kanıtı olarak kullanılmayacak.
 - [ ] Geçmiş Instagram ilanları “Yaklaşan seferler” listesine eklenmeyecek.

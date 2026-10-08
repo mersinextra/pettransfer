@@ -107,9 +107,10 @@
   var icons = { arac: "i-van", yolculuk: "i-road", teslimat: "pati" };
   if (gallery) {
     (window.GALERI || []).forEach(function (g) {
-      var media = el("div", { class: "g-media" + (g.ilan ? " g-media-poster" : "") });
+      var media = el("div", { class: "g-media" });
       if (g.gorsel) {
         var img = el("img", { src: g.gorsel, alt: g.alt || g.baslik, loading: "lazy", decoding: "async" });
+        if (g.konum) img.style.objectPosition = g.konum;
         media.appendChild(g.tam
           ? el("a", { href: g.tam, target: "_blank", rel: "noopener", "aria-label": g.baslik + " – büyük görseli aç" }, [img])
           : img);
@@ -119,7 +120,7 @@
       gallery.appendChild(el("article", { class: "g-item", "data-kategori": g.kategori }, [
         media,
         el("div", { class: "g-body" }, [
-          el("span", { class: "g-tag", text: g.ilan ? "Geçmiş sefer ilanı" : (labels[g.kategori] || "") }),
+          el("span", { class: "g-tag", text: labels[g.kategori] || "" }),
           el("h3", { text: g.baslik }),
           g.metin ? el("p", { text: g.metin }) : null,
           g.link ? el("a", { href: g.link, rel: "noopener", target: "_blank", text: "Instagram’da görüntüle" }) : null

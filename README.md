@@ -25,9 +25,9 @@ Yerelde görüntülemek için: `python3 -m http.server` ve tarayıcıda `http://
 Tarihi geçen kayıtlar otomatik gizlenir. Liste boşsa “Güncel güzergâh ve tarihler için bize ulaşın” mesajı görünür.
 
 ## Fotoğraf eklemek
-- Ana bölüm: `assets/img/hero-arac.webp` + `hero-arac-760.webp` (17:10 oran)
-- Araç bölümü: `assets/img/arac-on.webp`
-- Galeri: `assets/js/galeri.js` içindeki `gorsel` (küçük, ~600px), `tam` (büyük) ve `alt` alanları
+- Ana bölüm: `assets/img/arac-yan.webp` + `arac-yan-760.webp` (17:10 oran)
+- Araç bölümü: `assets/img/teslim-1.webp` (4:3)
+- Galeri: `assets/js/galeri.js` içindeki `gorsel` (küçük, ~600px), `tam` (büyük), `konum` (kırpma odağı) ve `alt` alanları
 - Paylaşım önizlemesi: `assets/img/og-arac.jpg` (1200×630)
 
 Dosya yoksa site hata vermez; yerine sade bir yedek kart görünür. Görselleri WebP olarak, 200 KB altında tutun.

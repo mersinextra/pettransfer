@@ -4,12 +4,10 @@ Statik, bağımlılıksız tek sayfa site (HTML + CSS + az miktarda JavaScript).
 
 ```
 index.html                 Ana sayfa (9 bölüm)
-kvkk.html                  KVKK aydınlatma metni – TASLAK
-kullanim-kosullari.html    Kullanım koşulları – TASLAK
 assets/css/style.css       Stiller ve renk değişkenleri
 assets/js/seferler.js      Yaklaşan seferler listesi (güncellenebilir)
 assets/js/galeri.js        Gerçek yolculuklar galerisi (güncellenebilir)
-assets/js/main.js          Menü, sefer kartları, galeri filtresi, WhatsApp formu
+assets/js/main.js          Menü, sefer kartları, galeri filtresi
 assets/img/                Gerçek fotoğraflar buraya eklenecek
 docs/DEGERLENDIRME.md      Değerlendirme, öncelikler, sayfa yapısı ve metin notları
 docs/YAYIN-KONTROL.md      Yayın öncesi doğrulama listesi
@@ -32,3 +30,9 @@ Tarihi geçen kayıtlar otomatik gizlenir. Liste boşsa “Güncel güzergâh ve
 - Galeri: `assets/js/galeri.js` içindeki `gorsel` ve `alt` alanları (800×600)
 
 Dosya yoksa site hata vermez; yerine sade bir yedek kart görünür. Görselleri WebP olarak, 200 KB altında tutun.
+
+## Yayına alma (mevcut hosting)
+1. Hosting paneline (cPanel vb.) girin, **Dosya Yöneticisi → public_html** klasörünü açın.
+2. Mevcut sitenin yedeğini alın (klasördeki dosyaları ZIP'leyip indirin).
+3. `pettransfer-site.zip` dosyasını yükleyip çıkartın; `index.html` doğrudan `public_html` içinde olmalı.
+4. Eski siteden kalan, yeni sitede olmayan sayfalar varsa (ör. eski hizmet sayfaları) silmeden önce web sorumlunuzla yönlendirme gerekip gerekmediğini konuşun.

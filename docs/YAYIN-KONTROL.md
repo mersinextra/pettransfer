@@ -8,11 +8,10 @@ Bu site, mevcut web sitesine ve Instagram hesabına doğrudan erişilemeden, mü
 - [ ] **Yurt dışı rotalar:** Hangi ülkelere, hangi koşullarla hizmet verildiği. Sitede ülke listesi verilmedi; rota bazında bilgi alınması isteniyor.
 - [ ] **Hava yolu organizasyonu:** İşletmenin rolü (organizasyon/refakat/evrak).
 - [ ] **Kafes:** İşletme kafes sağlıyor mu, müşterinin kafesi kullanılabiliyor mu?
-- [ ] **Hayvan türleri:** Formda Kedi / Köpek / Diğer seçenekleri var; kabul edilmeyen tür varsa güncellenecek.
 - [ ] **İkinci numara (0544 598 42 86):** Bazı ilanlarda görülüyor; işlevi doğrulanmadığı için sitede kullanılmadı.
 - [ ] **Mevcut sitedeki sayısal iddialar** (yıl, transfer sayısı vb.): Yeni sitede kullanılmadı. Belgelenirse eklenebilir.
 - [ ] **“Resmî” ifadesi / yetki belgesi:** Instagram biyografisindeki ifade tek başına kanıt sayılmadı. Yetki belgesi varsa belge adı ve numarasıyla eklenebilir.
-- [ ] **Açık adres / unvan:** KVKK metni ve yapılandırılmış veri (LocalBusiness) için.
+- [ ] **Açık adres / unvan:** Yapılandırılmış veri (LocalBusiness) için; şu an yalnızca Mezitli / Mersin yazılı.
 
 ## İçerik ve görseller
 - [ ] Orijinal logo dosyası alınacak; `index.html` başlığındaki geçici pati ikonu ve renk değişkenleri logoya göre eşleştirilecek.
@@ -23,10 +22,8 @@ Bu site, mevcut web sitesine ve Instagram hesabına doğrudan erişilemeden, mü
 - [ ] Geçmiş Instagram ilanları “Yaklaşan seferler” listesine eklenmeyecek.
 - [ ] Gerçek görsel eklendiğinde `og:image` etiketi açılacak.
 
-## Hukuki
-- [ ] `kvkk.html` ve `kullanim-kosullari.html` taslaktır; hukuk danışmanı onayından sonra sarı uyarı kutusu ve `noindex` etiketi kaldırılacak.
-
 ## Teknik
-- [ ] Gerçek cihazda (iOS Safari + Android Chrome) form → WhatsApp akışı denenecek.
+- [ ] Gerçek cihazda (iOS Safari + Android Chrome) WhatsApp butonları ve hazır mesaj denenecek.
+- [ ] İleride sitede form, analiz aracı veya çerez kullanılırsa KVKK aydınlatma metni yeniden ele alınacak.
 - [ ] Alan adına yüklendikten sonra Google Search Console’a `sitemap.xml` gönderilecek.
 - [ ] Lighthouse ile mobil performans ve erişilebilirlik ölçülecek (görseller eklendikten sonra).

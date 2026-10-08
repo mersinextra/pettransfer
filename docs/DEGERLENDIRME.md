@@ -5,12 +5,12 @@
 
 ## Kısa değerlendirme
 - Hizmetin değeri güvende ve iletişimde: Ziyaretçi “dostum güvende mi, süreç nasıl işler, fiyat ne olur?” sorularına hızlı cevap arıyor.
-- Talepler WhatsApp’tan geliyor, ancak eksik bilgiyle gelen mesajlar ek yazışma gerektirir. Form, teklif için gereken bilgileri tek mesajda topluyor.
+- Talepler WhatsApp’tan geliyor, ancak eksik bilgiyle gelen mesajlar ek yazışma gerektirir. Teklif bölümü gereken bilgileri listeliyor ve bu başlıklarla hazır bir WhatsApp mesajı açıyor.
 - Instagram’daki ilan görselleri yoğun yazılı. Web’de bu bilgi tarih, çıkış ve güzergâh alanlarına ayrıldı.
 - Güven, uydurma rakam veya yorumlarla değil, gerçek araç ve teslimat görselleri, açık süreç ve dürüst SSS ile kuruluyor.
 
 ## Öncelikler
-1. **Nitelikli WhatsApp talebi:** Ana buton, mobil sabit çubuk ve formdan hazır mesaj.
+1. **Nitelikli WhatsApp talebi:** Ana buton, mobil sabit çubuk ve teklif bölümündeki başlıklı hazır mesaj.
 2. **Mobil kullanım:** Tek sütun, 48 px dokunma alanları, 16 px form yazısı, sabit Ara/WhatsApp çubuğu.
 3. **Güven:** Altı adımlı süreç, gerçek fotoğraf alanları, doğrulanmamış iddiaların çıkarılması.
 4. **Güncellenebilir seferler:** `seferler.js` ile kod bilgisi gerektirmeden güncelleme, tarihi geçenlerin otomatik gizlenmesi.
@@ -26,8 +26,8 @@
 | 5 | Araç ve yolculuk | Taşıma düzeni (yalnızca doğrulanmış özellikler) | Yolculuk Koşullarını Sor |
 | 6 | Gerçek yolculuklar | Araç / Yolculuk / Teslimat galerisi | Instagram’da görüntüle |
 | 7 | SSS | Teklif, fiyat, kafes, teslim alma, evrak, ülke, iletişim | — |
-| 8 | Talep formu | Düzenli WhatsApp mesajı | WhatsApp Mesajını Hazırla |
-| 9 | İletişim / alt bilgi | Telefon, WhatsApp, e-posta, Instagram, KVKK | Ara / WhatsApp (mobil çubuk) |
+| 8 | Teklif talebi | Gereken bilgiler + başlıklı hazır WhatsApp mesajı | WhatsApp’ta Hazır Mesajı Aç |
+| 9 | İletişim / alt bilgi | Telefon, WhatsApp, e-posta, Instagram | Ara / WhatsApp (mobil çubuk) |
 
 ## Metin ve doğruluk kararları
 - İngilizce süs başlıkları kullanılmadı; tüm başlıklar Türkçe.
@@ -37,7 +37,7 @@
 - Yurt dışı için ülke listesi verilmedi; rota bazında bilgi istendi.
 - Kıbrıs transferi, belgelenmiş Girne–İzmir–Seferihisar paylaşımı üzerinden geçmiş örnek olarak anlatıldı.
 - Eğitim ve yavru ilanları siteye eklenmedi; odak transfer hizmeti.
-- Form sonrası “Talebiniz gönderildi” denmez; mesajın kullanıcı WhatsApp’ta Gönder’e dokunduğunda ulaşacağı açıkça yazılır.
+- İşletme kararıyla site formu ve KVKK/koşullar sayfaları kaldırıldı; site kişisel veri toplamıyor. Teklif bölümü mesajın kullanıcı WhatsApp’ta Gönder’e dokunduğunda ulaşacağını açıkça belirtir.
 
 ## Anahtar ifadeler (doğal kullanım)
 “evcil hayvan taşıma” (başlık, açıklama, ana bölüm), “pet transfer” (marka, başlık), “şehirler arası evcil hayvan transferi” (ana bölüm, yurt içi kartı), “yurt dışı evcil hayvan taşıma” (yurt dışı kartı), “Kıbrıs evcil hayvan transferi” (Kıbrıs kartı).
@@ -49,4 +49,4 @@ Yaklaşık web paleti uygulandı; resmî ölçülmüş marka kodu değildir. Kon
 - WhatsApp butonu için beyaz yazıyla daha yüksek kontrastlı #1F7A3A kullanıldı.
 
 ## Uygulama doğrulaması
-Playwright (Chromium) ile 375 px mobil ve 1366 px masaüstünde test edildi: yatay kaydırma yok, menü aç/kapa, galeri filtresi, form doğrulama ve odak, WhatsApp mesaj içeriği, sefer kartlarında geçmiş tarihin gizlenmesi, eksik fotoğraf yedekleri ve hukuki sayfa bağlantıları çalışıyor. Konsol hatası yok. WhatsApp’ın gerçek cihazda açılması ortam ağ kısıtı nedeniyle denenemedi.
+Playwright (Chromium) ile 375 px mobil ve 1366 px masaüstünde test edildi: yatay kaydırma yok, menü aç/kapa, galeri filtresi, hazır WhatsApp mesajı içeriği, sefer kartlarında geçmiş tarihin gizlenmesi, eksik fotoğraf yedekleri ve sayfa içi bağlantılar çalışıyor. Konsol hatası yok. WhatsApp’ın gerçek cihazda açılması ortam ağ kısıtı nedeniyle denenemedi.

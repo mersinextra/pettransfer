@@ -213,7 +213,7 @@
           </li>
         </ol>
         <div class="center">
-          <a class="btn btn-primary" href="#talep">Talep Formuna Git</a>
+          <a class="btn btn-primary" href="#talep">Teklif İçin Gerekenler</a>
         </div>
       </div>
     </section>
@@ -279,7 +279,7 @@
         <div class="faq">
           <details>
             <summary>Teklif almak için hangi bilgileri paylaşmalıyım?</summary>
-            <p>Çıkış ve varış noktası, tahmini tarih, hayvanınızın türü, sayısı ve yaklaşık ağırlığı teklif için yeterli bir başlangıçtır. Varsa sağlık durumu, ilaç kullanımı ya da özel ihtiyaçlarını da not olarak ekleyebilirsiniz. Aşağıdaki form bu bilgileri düzenli bir WhatsApp mesajına dönüştürür.</p>
+            <p>Çıkış ve varış noktası, tahmini tarih, hayvanınızın türü, sayısı ve yaklaşık ağırlığı teklif için yeterli bir başlangıçtır. Varsa sağlık durumu, ilaç kullanımı ya da özel ihtiyaçlarını da not olarak ekleyebilirsiniz. Teklif bölümündeki butonla bu başlıkları içeren hazır bir WhatsApp mesajı açabilirsiniz.</p>
           </details>
           <details>
             <summary>Fiyatı neler etkiler?</summary>
@@ -309,71 +309,28 @@
       </div>
     </section>
 
-    <!-- 8. TALEP FORMU -->
+    <!-- 8. TEKLİF TALEBİ -->
     <section class="section" id="talep" aria-labelledby="talep-baslik">
       <div class="container narrow">
         <div class="section-head">
-          <p class="eyebrow">Transfer talebi</p>
+          <p class="eyebrow">Teklif talebi</p>
           <h2 id="talep-baslik">Rotanızı yazın, WhatsApp’tan teklif alın</h2>
-          <p>Form bilgilerinizi düzenli bir WhatsApp mesajına dönüştürür. Mesaj, siz WhatsApp’ta <strong>Gönder</strong>’e dokunduğunuzda bize ulaşır.</p>
+          <p>Size daha hızlı ve doğru fiyat verebilmemiz için mesajınızda şu bilgilerin bulunması yeterli:</p>
         </div>
-
-        <form id="talep-formu" class="form" novalidate>
-          <div class="field">
-            <label for="f-ad">Ad soyad</label>
-            <input id="f-ad" name="ad" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-tel">Telefon</label>
-            <input id="f-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" placeholder="05xx xxx xx xx" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="f-cikis">Çıkış</label>
-              <input id="f-cikis" name="cikis" type="text" placeholder="Şehir / ülke" required>
-            </div>
-            <div class="field">
-              <label for="f-varis">Varış</label>
-              <input id="f-varis" name="varis" type="text" placeholder="Şehir / ülke" required>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="f-tarih">Tahmini tarih</label>
-              <input id="f-tarih" name="tarih" type="date" required>
-            </div>
-            <div class="field">
-              <label for="f-tur">Hayvan türü</label>
-              <select id="f-tur" name="tur" required>
-                <option value="">Seçin</option>
-                <option>Kedi</option>
-                <option>Köpek</option>
-                <option>Diğer</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="f-sayi">Sayı</label>
-              <input id="f-sayi" name="sayi" type="number" inputmode="numeric" min="1" max="50" value="1" required>
-            </div>
-            <div class="field">
-              <label for="f-kilo">Yaklaşık ağırlık <span class="opt">(kg)</span></label>
-              <input id="f-kilo" name="kilo" type="text" inputmode="decimal" placeholder="Örn. 4" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="f-not">Not <span class="opt">(isteğe bağlı)</span></label>
-            <textarea id="f-not" name="not" rows="3" placeholder="Irk, sağlık durumu, kafes, refakat isteği vb."></textarea>
-          </div>
-          <p class="form-legal">Formdaki bilgiler sunucumuza kaydedilmez; yalnızca WhatsApp mesajınızı hazırlamak için kullanılır. Ayrıntılar için <a href="kvkk.html">KVKK Aydınlatma Metni</a>.</p>
-          <p id="form-hata" class="form-error" role="alert" hidden></p>
-          <button class="btn btn-whatsapp btn-block" type="submit">
+        <div class="request-box">
+          <ul class="request-list">
+            <li>Çıkış ve varış noktası</li>
+            <li>Tahmini tarih</li>
+            <li>Hayvan türü ve sayısı</li>
+            <li>Yaklaşık ağırlık</li>
+            <li>Varsa özel notlar <span class="opt">(sağlık durumu, kafes, refakat isteği)</span></li>
+          </ul>
+          <a class="btn btn-whatsapp btn-block" href="https://wa.me/905444144286?text=Merhaba%2C%20evcil%20hayvan%20transferi%20i%C3%A7in%20teklif%20almak%20istiyorum.%0A%0A%C3%87%C4%B1k%C4%B1%C5%9F%3A%20%0AVar%C4%B1%C5%9F%3A%20%0ATahmini%20tarih%3A%20%0AHayvan%20t%C3%BCr%C3%BC%3A%20%0ASay%C4%B1%3A%20%0AYakla%C5%9F%C4%B1k%20a%C4%9F%C4%B1rl%C4%B1k%20%28kg%29%3A%20%0ANot%3A%20" data-wa-link>
             <svg aria-hidden="true" class="icon"><use href="#i-wa"/></svg>
-            WhatsApp Mesajını Hazırla
-          </button>
-          <div id="form-durum" class="form-status" role="status" hidden></div>
-        </form>
+            WhatsApp’ta Hazır Mesajı Aç
+          </a>
+          <p class="request-help">Mesaj bu başlıklarla açılır; boşlukları doldurup <strong>Gönder</strong>’e dokunmanız yeterli. İsterseniz <a href="tel:+905444144286">0544 414 42 86</a> numarasını arayabilirsiniz.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -395,13 +352,6 @@
           <li><a href="https://wa.me/905444144286" data-wa-link><svg aria-hidden="true" class="icon"><use href="#i-wa"/></svg>WhatsApp</a></li>
           <li><a href="mailto:info@pettransfer.tr"><svg aria-hidden="true" class="icon"><use href="#i-mail"/></svg>info@pettransfer.tr</a></li>
           <li><a href="https://www.instagram.com/pettransfer.ercanaktas/" rel="noopener" target="_blank"><svg aria-hidden="true" class="icon"><use href="#i-ig"/></svg>@pettransfer.ercanaktas</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="footer-title">Bilgi</h2>
-        <ul class="contact-list">
-          <li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
-          <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
         </ul>
       </div>
     </div>

@@ -8,6 +8,7 @@ assets/css/style.css       Stiller ve renk değişkenleri
 assets/js/seferler.js      Yaklaşan seferler listesi (güncellenebilir)
 assets/js/galeri.js        Gerçek yolculuklar galerisi (güncellenebilir)
 assets/js/main.js          Menü, sefer kartları, galeri filtresi
+assets/js/olcum.js         Google Ads WhatsApp/telefon tıklama ölçümü
 assets/img/                Gerçek fotoğraflar buraya eklenecek
 docs/DEGERLENDIRME.md      Değerlendirme, öncelikler, sayfa yapısı ve metin notları
 docs/YAYIN-KONTROL.md      Yayın öncesi doğrulama listesi

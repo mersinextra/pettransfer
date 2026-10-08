@@ -29,5 +29,14 @@ Bu site, mevcut web sitesine ve Instagram hesabına doğrudan erişilemeden, mü
 ## Teknik
 - [ ] Gerçek cihazda (iOS Safari + Android Chrome) WhatsApp butonları ve hazır mesaj denenecek.
 - [ ] İleride sitede form, analiz aracı veya çerez kullanılırsa KVKK aydınlatma metni yeniden ele alınacak.
+
+## Google Ads ölçümü (AW-18355595125)
+- Etiket `index.html` <head> içinde tek kez yüklenir; tıklama dinleyicisi `assets/js/olcum.js`.
+- WhatsApp hedefi: `AW-18355595125/ULKOCLGe0pUdEPXO0LBE` (wa.me, api.whatsapp.com bağlantıları)
+- Telefon hedefi: `AW-18355595125/SQcBCLSe0pUdEPXO0LBE` (tel: bağlantıları)
+- Consent Mode varsayılanı: reklam/analiz çerezleri **denied**. Sitede çerez bandı yok; Google bu durumda çerezsiz ping gönderir, dönüşümler Google Ads'te kısmen modellenmiş görünür.
+- [ ] Çerez bandı/izin yönetimi eklenip eklenmeyeceğine işletme karar verecek. Eklenirse onay anında `gtag('consent','update',{...})` çağrılmalı; KVKK aydınlatma metni ve çerez politikası hazırlanmalı.
+- [ ] Yayından sonra Google Tag Assistant (tagassistant.google.com) ile kontrol: her WhatsApp/telefon butonuna bir kez tıklayın, her tıklamada doğru `send_to` ile tek `conversion` olayı görünmeli; sayfa açılışında conversion olmamalı.
+- [ ] Test tıklamaları Google Ads'te dönüşüm olarak görünebilir; bunlar gerçek görüşme/satış değildir.
 - [ ] Alan adına yüklendikten sonra Google Search Console’a `sitemap.xml` gönderilecek.
 - [ ] Lighthouse ile mobil performans ve erişilebilirlik ölçülecek (görseller eklendikten sonra).
